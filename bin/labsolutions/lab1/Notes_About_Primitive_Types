@@ -1,0 +1,90 @@
+Lab1_Notes_About_Primitive_Types
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Primitive Types in Java
+
+	Java has eight built-in primitive data types that serve as the building blocks for 
+	data manipulation in the language. These types are not objects and are defined by the 
+	language itself. They are used to represent simple values such as numbers, characters, 
+	and boolean values.
+
+	1. byte
+		Size: 8 bits (1 byte)
+		Range: -128 to 127
+		Usage: Useful for saving memory in large arrays where the memory savings are crucial. 
+		Often used in file I/O operations where data is read byte by byte.
+	
+	2. short
+		Size: 16 bits (2 bytes)
+		Range: -32,768 to 32,767
+		Usage: Similar to byte, but allows for a larger range of values. It is rarely used in practice as 
+		int is usually preferred unless memory is a concern.
+	
+	3. int
+		Size: 32 bits (4 bytes)
+		Range: -2^31 to 2^31-1 (-2,147,483,648 to 2,147,483,647)
+		Usage: The most commonly used integer type in Java. Used for representing whole numbers in a wide 
+		range of scenarios, such as counters, indices, and arithmetic operations.
+	
+	4. long
+		Size: 64 bits (8 bytes)
+		Range: -2^63 to 2^63-1 (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+		Usage: Used when a wider range than int is required, such as for large computations, timestamps, or 
+		identifiers in large datasets.
+	
+	5. float
+		Size: 32 bits (4 bytes)
+		Range: Approximately ±3.40282347E+38F (6-7 significant decimal digits)
+		Usage: Used for fractional numbers where precision is less critical. Often used in graphical 
+		applications, simulations, or any scenario where memory efficiency is important.
+	
+	6. double
+		Size: 64 bits (8 bytes)
+		Range: Approximately ±1.79769313486231570E+308 (15-16 significant decimal digits)
+		Usage: The default type for decimal values in Java. Used in financial calculations, 
+		scientific computations, and any situation requiring double-precision floating-point arithmetic.
+	
+	7. char
+		Size: 16 bits (2 bytes)
+		Range: 0 to 65,535 (unsigned)
+		Usage: Used to store a single character. Java uses Unicode for char, allowing it to represent a 
+		wide range of characters from different languages and symbols.
+	
+	8. boolean
+		Size: Not precisely defined, but typically 1 bit is used
+		Values: true or false
+		Usage: Used to represent truth values. Commonly used in control flow statements like if, while, 
+		and for loops.
+
+Key Characteristics of Primitive Types:
+
+	Not Objects: 
+		Primitive types are not objects in Java. They store values directly in memory and do not come 
+		with methods or properties.
+	
+	Default Values:
+		byte, short, int, long: 0
+		float, double: 0.0f and 0.0d, respectively
+		char: '\u0000' (the null character)
+		boolean: false
+	
+	Efficiency: 
+		Primitives are more efficient in terms of memory and performance compared to objects, 
+		making them suitable for low-level operations.
+	
+	Wrapper Classes: 
+		Each primitive type has a corresponding wrapper class: 
+			(Byte, Short, Integer, Long, Float, Double, Character, Boolean). 
+		Wrapper classes allow primitives to be used as objects when necessary 
+			(e.g., in collections like ArrayList).
+	
+	Type Conversion: 
+		Java automatically handles type conversion between different primitive types 
+			(e.g., from int to double). 
+		However, explicit casting is required when converting from a larger to a smaller type 
+			(e.g., from double to int).
+		
+		
+		
+		
