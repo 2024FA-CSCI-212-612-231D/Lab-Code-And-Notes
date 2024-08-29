@@ -18,3 +18,5 @@ In a Java project, the src and bin directories serve different purposes, and the
  - Separation of Concerns: The separation of src and bin helps keep your source code (which you write and edit) separate from the compiled bytecode (which the JVM runs). This makes the project more organized and easier to manage.
  - Efficiency: By having separate directories, your source code remains untouched by the compilation process, while the compiled bytecode is stored in a dedicated location where it can be quickly accessed by the JVM for execution.
  - Project Structure: This structure also aligns with best practices in software development, where source code and compiled outputs are kept in different locations.
+
+for questions, email me at aleksandra.georgievska@qc.cuny.edu
