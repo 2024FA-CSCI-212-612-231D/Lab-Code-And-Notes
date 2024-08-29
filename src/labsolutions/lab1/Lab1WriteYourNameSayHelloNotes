@@ -1,0 +1,53 @@
+Lab1WriteYourNameSayHello Notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Code Walkthrough:*
+
+	Importing Scanner:
+		The program imports java.util.Scanner, which is part of Java's standard library. 
+		The Scanner class is used to read input from the console.
+	
+	Creating a Scanner Object:
+		A Scanner object named scanner is created using the line Scanner scanner = new Scanner(System.in);.
+		This object is linked to the standard input stream (System.in), allowing the program to capture user input.
+	
+	Prompting the User:
+		The program prompts the user to enter their name with the line System.out.print("Please enter your name: ");.
+		System.out.print is used instead of System.out.println to keep the cursor on the same line after the prompt.
+	
+	Reading the Input:
+		The user's input is captured using String name = scanner.nextLine();.
+		scanner.nextLine() reads the entire line of text entered by the user and stores it in the variable name.
+	
+	Greeting the User:
+		The program greets the user by printing a message that includes their name with System.out.println("Hello, " + name + "!");.
+		The + operator is used to concatenate the string "Hello, " with the user's name and an exclamation mark.
+	
+	Closing the Scanner:
+		The scanner.close(); line closes the Scanner object, which is good practice to free up resources when the object is 
+		no longer needed.
+
+
+*Learning Takeaways:*
+
+	Basic Input/Output (I/O):
+		This program demonstrates basic input and output operations in Java, showing how to interact with users via the console.
+	
+	Using the Scanner Class:
+		Introduces the Scanner class, a powerful utility for reading input from various sources, including user input from the console.
+		You learn how to create a Scanner object and use it to capture text input from the user.
+	
+	String Concatenation:
+		The program illustrates string concatenation using the + operator, which is a fundamental operation in many programming tasks.
+	
+	Resource Management:
+		The importance of closing resources (like the Scanner object) after use is highlighted. 
+		This helps prevent potential memory leaks or resource locking in more complex applications.
+	
+	Understanding System.out.print vs. System.out.println:
+		You learn the difference between System.out.print and System.out.println, with the former keeping the cursor on the same line 
+		and the latter moving it to the next line after printing.
+		
+		
+		
+		

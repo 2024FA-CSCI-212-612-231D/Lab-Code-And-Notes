@@ -1,0 +1,47 @@
+Lab1DivideByZeroNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Code Walkthrough:*
+
+	Numerator and Denominator:
+		The code defines a numerator (10.0) and a denominator (0.0)
+	
+	Division Performed: 
+		It then divides the numerator by the denominator
+	
+	Result: 
+	The result is printed, and the program checks whether the result is Infinity or NaN 
+	using a wrapper class "Double" and built-in wrapper class methods:
+		- Double.isInfinite(result) and 
+		- Double.isNaN(result)
+	
+	Output: 
+		In Java, if a double is divided by zero, the result will be positive or negative infinity,
+		depending on the sign of the numerator. 
+		
+		If the numerator is zero, the result will be NaN.
+	
+
+Learning Takeaways:
+
+	Division by Zero in Java:
+		This exercise demonstrates how Java handles division by zero when dealing with double values, resulting in 
+		special cases like Infinity and NaN.
+	
+	Understanding Wrapper Classes:
+		Introduces the concept of "wrapper classes" in Java, particularly the Double class, which provides object-oriented 
+		features and utility methods for the primitive type double.
+	
+	Special Values:
+		You learn about the special values Infinity and NaN, which are used in floating-point arithmetic to represent results 
+		that are beyond the range of normal numerical values.
+	
+	Utility Methods in Wrapper Classes:
+		The lab highlights important methods provided by the Double wrapper class, such as Double.isInfinite() and Double.isNaN(), 
+		which are used to identify these special cases in calculations.
+	
+	Floating-Point Arithmetic:
+		This lab provides a foundational understanding of floating-point arithmetic in Java, which is crucial for handling 
+		real-world numerical computations, especially those involving edge cases like division by zero.
+			
+			

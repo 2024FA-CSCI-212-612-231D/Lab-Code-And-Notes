@@ -1,0 +1,54 @@
+Lab1SumThreeNumbersNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Code Walkthrough:*
+
+	Importing Scanner:
+		The program imports java.util.Scanner, a utility class used for reading input from the user via the console.
+	
+	Creating a Scanner Object:
+		A Scanner object is instantiated using Scanner scanner = new Scanner(System.in);, allowing the program to 
+		capture user input.
+	
+	Prompting the User for Input:
+		The program prompts the user to enter three integers, one at a time.
+		Each prompt is done using System.out.print, which keeps the cursor on the same line as the prompt.
+		The integers are read and stored in variables firstNumber, secondNumber, and thirdNumber using scanner.nextInt().
+	
+	Calculating the Sum:
+		The sum of the three integers is calculated by adding the three variables: firstNumber + secondNumber + thirdNumber.
+		The result is stored in the variable sum.
+	
+	Outputting the Result:
+		The program prints the sum in a complete sentence, combining the individual integers and their sum in a readable 
+		format using System.out.println.
+	
+	Closing the Scanner:
+		Finally, the Scanner object is closed using scanner.close() to release the resource, which is good programming practice.
+
+
+*Learning Takeaways:*
+
+	Basic Input Handling:
+		This program introduces basic input handling in Java, showing how to capture and process user input using the 
+		Scanner class.
+	
+	Working with Integers:
+		You learn how to work with integers in Java, including reading integer inputs and performing arithmetic operations 
+		like addition.
+	
+	String Concatenation:
+		The program demonstrates string concatenation to create a meaningful output that combines text with the computed 
+		sum of the integers.
+	
+	User Interaction:
+		The program showcases how to interact with users through prompts and how to display results in a user-friendly way.
+	
+	Resource Management:
+		Reinforces the importance of closing the Scanner object after use, which is essential for good resource management 
+		in Java applications.
+	
+	Arithmetic Operations:
+		Provides practice in performing arithmetic operations on variables and using the result in subsequent steps of the program.
+	
+	
