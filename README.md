@@ -1,6 +1,6 @@
 # Class README.md
 
-For lab work and notes, use the 'src' folder, as these are your .java files. The content looks the same, but the file types are different. Here's how they're different: 
+For lab work and notes, use the 'src' folder, as these are your .java files. The content looks the same as the 'bin' folder, but the file types are different. Here's how they're different: 
 
 ### About the directories: 
 In a Java project, the src and bin directories serve different purposes, and their interaction is a fundamental part of how Java projects are organized and compiled. 
