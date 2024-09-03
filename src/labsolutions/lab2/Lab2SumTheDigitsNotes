@@ -1,0 +1,68 @@
+Lab2SumTheDigits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough:*
+	
+	Main Method and Test Cases:
+		The main method is where the program execution begins. 
+		
+		Three test cases are defined using the integers 12345, 9876, and 1001 to 
+		demonstrate how the sumDigits method works.
+		
+		The results of the sumDigits method are printed to the console for each test case, 
+		showing the sum of the digits of each number.
+
+	Static Method sumDigits:
+		The sumDigits method is defined as static because it operates on the input number directly 
+		and doesn't require an instance of the class.
+	
+	Parameters and Return Value:
+		It takes a single integer number as its parameter.
+		It returns the sum of the digits of the input number.
+
+	Calculating the Sum of Digits:
+		Initialization: The variable sum is initialized to 0. This will hold the cumulative sum of the digits.
+	
+		Looping through the Digits:
+			A while loop is used to process each digit of the number. 
+			The loop continues until number becomes 0.
+	
+				Inside the loop:
+					The expression number % 10 extracts the last digit of the number 
+					(e.g., for 123, this would give 3).
+					This digit is added to the sum.
+					The number is then divided by 10 (number /= 10), 
+					effectively removing the last digit (e.g., 123 becomes 12).
+					
+		Return: Once the loop has processed all digits, the method returns the final value of sum.
+	
+	Testing the Method:
+		The main method tests the sumDigits method by calling it with different integers and printing the results.
+		This allows verification that the method correctly sums the digits for various inputs.
+		
+
+*Learning Takeaways:*
+
+	Static Methods:
+		The program introduces the concept of static methods in Java, which can be called without 
+		creating an instance of the class. This is useful for utility functions like sumDigits that 
+		operate independently of object state.
+	
+	Looping and Modulus Operator:
+		The use of the while loop and the modulus operator (%) to extract digits from a number 
+		demonstrates important programming techniques for working with numbers at the digit level.
+	
+	Integer Division:
+		The method utilizes integer division (/) to remove the last digit of a number, 
+		which is a fundamental operation in many algorithms involving numbers.
+	
+	Method Testing:
+		The program emphasizes the importance of testing methods with various inputs to 
+		ensure they work as expected. This is a key practice in software development.
+	
+	Breaking Down Problems:
+		This exercise shows how to break down a problem (summing the digits of a number) 
+		into smaller, manageable steps, such as extracting each digit, summing them, and 
+		handling the overall logic in a loop.
+	
+	
+	

@@ -1,0 +1,57 @@
+Lab2GuessingGameNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough:*
+	
+	Importing Necessary Classes:
+		The program imports java.util.Scanner for reading user input and java.util.Random 
+		for generating random numbers.
+	
+	Creating Objects:
+		A Scanner object named scanner is created to capture user input.
+		A Random object named random is created to generate a random integer.
+	
+	Generating the Random Number:
+		The program generates a random integer between 1 and 100 using random.nextInt(100) + 1.
+		The nextInt(100) method generates a random number between 0 and 99, so adding 1 
+		shifts the range to 1-100.
+	
+	User Input and Guessing Loop:
+		The variable guess is initialized to store the user's input.
+		A while loop is used to repeatedly ask the user for a guess until they correctly guess 
+		the randomly generated number.
+	
+	Inside the loop:
+		The program prompts the user to enter a guess.
+		The user's input is compared to the target number:
+		If the guess is lower than the target number, the program outputs "Too low! Try again."
+		If the guess is higher than the target number, the program outputs "Too high! Try again."
+		If the guess is correct, the program outputs "Correct! The number was X." and the loop ends.
+	
+	Closing the Scanner:
+		After the correct number is guessed, the Scanner object is closed using scanner.close().
+
+*Learning Takeaways:*
+
+	Random Number Generation:
+		The program demonstrates how to generate random numbers using the Random class, 
+		a common requirement in games and simulations.
+	
+	Input Handling:
+		The program introduces input handling with the Scanner class, allowing users to interact 
+		with the program by entering guesses.
+	
+	Looping Constructs:
+		The use of a while loop to continuously prompt the user for input until a condition is met 
+		(i.e., the correct guess) is a practical example of looping constructs in Java.
+	
+	Conditional Statements:
+		Conditional statements (if, else if, else) are used to determine the relationship between 
+		the user's guess and the target number, showcasing how to control program flow based on user input.
+	
+	User Interaction:
+		The program provides immediate feedback to the user based on their input, enhancing the 
+		interactive experience of the game.
+	
+	Best Practices:
+		The importance of closing resources like the Scanner object after use is highlighted, 
+		which is essential for avoiding potential resource leaks in Java applications.
