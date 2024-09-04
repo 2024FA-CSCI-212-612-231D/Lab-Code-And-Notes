@@ -14,11 +14,16 @@ public class Lab2GuessingGame {
         // Create a Scanner object to read user input
         Scanner scanner = new Scanner(System.in);
 
+        // Generate a random integer between 1 and 100 (inclusive) using Math.random()
+        int targetNumber = (int) (Math.random() * 100) + 1;
+        
+        /* ALT SOLUTION USING RANDOM 
         // Create a Random object to generate a random number
         Random random = new Random();
 
         // Generate a random integer between 1 and 100 (inclusive)
         int targetNumber = random.nextInt(100) + 1;
+        */
 
         int guess = 0; // Variable to store the user's guess
 
