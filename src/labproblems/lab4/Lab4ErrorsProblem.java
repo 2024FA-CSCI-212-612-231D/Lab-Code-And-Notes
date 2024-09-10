@@ -2,6 +2,14 @@ package labproblems.lab4;
 
 public class Lab4ErrorsProblem{
 
+	/*
+	 * Lab Problem: The findSingletons method in the Errors class is intended to return a String 
+	 * containing only the letters that appear exactly once in the parameter str. 
+	 * It contains three errors (one syntax error, one runtime error, and one semantic error). 
+	 * Find and fix all three errors.
+	 * 
+	 * */
+	
 	public static void main(String[] args){
 		System.out.println(halveString("abracadabra"));
 		System.out.println(reverseString("abracadabra"));
