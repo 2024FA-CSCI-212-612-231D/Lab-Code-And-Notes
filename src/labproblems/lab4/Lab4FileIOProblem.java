@@ -6,6 +6,12 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Lab4FileIOProblem {
+	/*
+	 * Lab Problem:
+	 * 
+	 * Run the FileIO class using your own input file. 
+	 * (HINT: you need to replace the "inputFile.txt" with a real file pathway on your computer)
+	 * */
 
 	public static void main(String[] args) {
 		//try-catch statement attempts to run code and avoids errors
