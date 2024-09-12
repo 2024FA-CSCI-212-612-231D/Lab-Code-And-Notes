@@ -1,8 +1,10 @@
 package labproblems.lab5;
 
 public class Lab5ArraysHard_MaxSpanProblem {
+	
     public static int maxSpan(int[] nums) {
-       /*Lab Problem:
+       /* Lab Problem:
+        * 
         * Consider the leftmost and rightmost appearances of some value in an array. 
         * We'll say that the "span" is the number of elements between the two inclusive. 
         * A single value has a span of 1. Returns the largest span found in the given array. 
