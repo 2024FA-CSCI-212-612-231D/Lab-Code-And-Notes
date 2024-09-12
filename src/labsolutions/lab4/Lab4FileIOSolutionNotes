@@ -1,0 +1,97 @@
+Lab4FileIOSolutionNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough:*
+
+	This solution involves a Java program that demonstrates file input and output operations, 
+	focusing on handling checked exceptions such as FileNotFoundException. 
+	The key points of this program include reading from an input file and writing to an output file, 
+	using Scanner and PrintWriter, respectively. 
+	
+	Main Method: 
+		The main method contains the file input and output logic, using a try-with-resources block to ensure 
+		that resources (files) are properly closed after use. The goal of this program is to read from a file, 
+		print each word from the file to the console, and write some output to a different file.
+		
+		public static void main(String[] args) {
+		    try (Scanner input = new Scanner(new File("tempTextFile")); // input file
+		         PrintWriter output = new PrintWriter(new File("outputFile.txt"))) { // output file
+         
+	Input and Output:
+		Input: 
+			The Scanner object is used to read from an input file (in this case, tempTextFile). 
+			The user is expected to provide a valid file path. This is where the program might fail if 
+			the file doesn't exist or the path is incorrect, which is why it's wrapped in a try-catch block 
+			to handle the FileNotFoundException.
+		
+		Output: 
+			A PrintWriter object writes to an output file (in this case, outputFile.txt). The writer 
+			appends a simple message, Here is my output., at the end of the file.
+
+				while (input.hasNext()) {
+				    System.out.println(input.next()); // prints each word from the input file
+				    // System.out.print(input.next() + " "); //  prints words in a single line
+				}
+				output.append("Here is my output.");
+	
+	Error Handling:
+		Try-with-Resources: 
+			This is a special form of the try block where resources such as files or network connections are 
+			automatically closed at the end of the block.
+			
+		Exception Handling: 
+			The catch block handles the FileNotFoundException, which is a checked exception in Java that 
+			occurs if the program attempts to open a file that does not exist or if the file path is incorrect.
+	
+				} catch (FileNotFoundException e) {
+				    System.out.println("File not Found");
+				}
+				
+		If the file is not found, the program prints "File not Found" to the console.
+		
+	User Input Requirement: 
+		In the original lab problem, the user is prompted to replace the "inputFile.txt" with an actual file 
+		path on their system. The program expects a valid file path for reading, and the correct path needs 
+		to be set by the user.
+
+
+*Learning Takeaways:*
+
+	File Input/Output in Java:
+		The program demonstrates how to read from a file using the Scanner class and how to write to a file using 
+		the PrintWriter class. These are common classes used for file handling in Java.
+		
+		The Scanner class reads from a file line by line, or in this case, word by word, using input.hasNext() 
+		and input.next().
+	
+	Try-With-Resources:
+	This is a special form of try-catch that ensures the resources (e.g., files, streams) are automatically 
+	closed after use, reducing the likelihood of resource leaks. In this case, both the Scanner and PrintWriter 
+	objects are closed automatically when the try block completes.
+	
+	The advantage of using try-with-resources is that you don't have to manually close the files or resources 
+	in a "finally" block, which makes the code cleaner and safer.
+	
+	Exception Handling:
+		Java forces the programmer to handle certain exceptions, like FileNotFoundException, when performing 
+		operations that can potentially fail (e.g., opening a file that doesn't exist). This ensures the program 
+		can handle such issues gracefully instead of crashing.
+		
+		The program uses a catch block to print an error message ("File not Found") if the specified file cannot 
+		be opened. This way, users know why the program failed and can take corrective actions.
+		
+	Practical Application of File Paths:
+		The problem mentions that the user needs to replace "tempTextFile" with a real file path. This introduces 
+		the concept of file handling with relative or absolute paths in Java. Understanding how file paths work 
+		in relation to the current working directory is crucial for file I/O operations.
+		
+	Appending to Files:
+		The PrintWriter object appends data to the file with the append method, demonstrating how to write to a 
+		file. In this case, the message "Here is my output." is appended to the outputFile.txt file.
+		
+	Checked Exceptions:
+		Java distinguishes between checked and unchecked exceptions. 
+		Checked exceptions, such as FileNotFoundException, must either be caught with a try-catch block or 
+		declared with throws in the method signature. This forces the programmer to handle potential errors 
+		during compile time rather than at runtime, improving robustness.
+		
+		
