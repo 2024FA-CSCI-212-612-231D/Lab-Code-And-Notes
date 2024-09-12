@@ -1,0 +1,69 @@
+Lab4ErrorsSolutionNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough:*
+
+This solution focuses on correcting the errors in four methods: 
+halveString, reverseString, countA, and findSingletons, 
+which have different types of issues (syntax, runtime, and semantic errors).
+
+	halveString (Syntax Error):
+		Original Problem: 
+			The method is supposed to return the first half of the string but contains a typo in the length method.
+		Error: 
+			The original code had a typo  "lenght()"
+		Solution: 
+			Correct the typo by using original.length() properly:
+				return original.substring(0, original.length() / 2);
+				
+
+	reverseString (Runtime Error):
+		Original Problem: 
+			The method is designed to reverse the input string but causes an "out-of-bounds" runtime error.
+		Error: 
+			The loop index i was incorrectly starting from original.length() instead of original.length() - 1.
+		Solution: 
+			Adjust the loop condition to avoid accessing out-of-range indexes by starting from original.length() - 1.
+				for (int i = original.length() - 1; i >= 0; i--)
+			This ensures that the loop correctly iterates over the entire string from the last to the first character.
+			
+	
+	countA (Semantic Error):
+		Original Problem: 
+			The method counts occurrences of 'A' and 'a' but incorrectly compares strings using ==.
+		Error: 
+			In Java, strings should be compared using the .equals() method rather than == to ensure content comparison.
+		Solution: 
+			Replace == with .equals() for comparing string values and include both 'a' and 'A' in the condition:
+				if (str.substring(i, i + 1).equals("a") || str.substring(i, i + 1).equals("A"))
+			This fix ensures that both lowercase and uppercase 'a' are correctly counted.
+			
+			
+	Now that you know the differnt types of errors, see the comments on the solution file for the fixes 
+	in the findSingleton method. They follow the same fixes as the above errors. 
+	
+	
+*Learning Takeaways:*
+	Syntax Errors: 
+		These are typically minor mistakes that result in code not compiling. The fix for the halveString method 
+		involved simply correcting a typo in the method length().
+
+	Runtime Errors: 
+		These occur when the code compiles but fails during execution due to invalid logic or improper handling of 
+		conditions. For example, in the reverseString method, starting the loop at original.length() caused an 
+		"index out of bounds" error. Correcting the loop condition to original.length() - 1 resolved this.
+	
+	Semantic Errors: 
+		These are errors where the logic is technically valid but does not produce the intended behavior. 
+		The most common semantic issue here was in the countA method, where == was used instead of .equals() 
+		to compare strings, leading to incorrect results.
+	
+	Nested Loops: 
+		In the findSingletons method, we used a nested loop to count the occurrences of each character in the string. 
+		The key takeaway here is the careful handling of indices and loop increments to avoid infinite loops 
+		and out-of-bounds errors.
+
+	String Manipulation: 
+		Working with substrings and string comparisons is a common task in Java. This example highlights the 
+		importance of using methods like .substring() and .equals() correctly when handling string operations.
+		
+		

@@ -17,7 +17,7 @@ public class Lab2GuessingGame {
         // Generate a random integer between 1 and 100 (inclusive) using Math.random()
         int targetNumber = (int) (Math.random() * 100) + 1;
         
-        /* ALT SOLUTION USING RANDOM 
+        /* ALT SOLUTION USING RANDOM PACKAGE
         // Create a Random object to generate a random number
         Random random = new Random();
 

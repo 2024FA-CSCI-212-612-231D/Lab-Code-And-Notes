@@ -1,10 +1,10 @@
 package labsolutions.lab2;
 
 public class Lab2SumTheDigits {
-	 // Lab Instructions:
-			// Write a static method that has an integer as a parameter and returns the sum of the digits in that number. Then write code in a main method to test it.
+	// Lab Instructions:
+	// Write a static method that has an integer as a parameter and returns the sum of the digits in that number. Then write code in a main method to test it.
 
-			// TODO Lab Solution:
+	// TODO Lab Solution:
 	
     // Static method to calculate the sum of the digits of an integer
     public static int sumDigits(int number) {

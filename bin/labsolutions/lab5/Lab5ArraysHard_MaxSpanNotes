@@ -1,0 +1,52 @@
+Lab5HarraysHard_MaxSpanNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough:*
+
+	Initialize maxSpan:
+		The variable maxSpan is initialized to 0
+		This will store the largest span found as the program checks the array
+	
+	Outer Loop (Iterating through the array):
+		The outer loop runs from the first element to the last (for (int i = 0; i < nums.length; i++))
+		i refers to the index of the current element being processed, which we will call the "leftmost" occurrence
+	
+	Inner Loop (Finding the rightmost occurrence):
+		For each element nums[i], another loop starts from the end of the array and works backwards 
+			(for (int j = nums.length - 1; j >= i; j--))
+		The inner loop checks for the rightmost occurrence of the current element nums[i]
+		When it finds the rightmost occurrence of nums[i] (where nums[j] == nums[i]), it breaks out of the loop
+	
+	Calculate Span:
+		After finding both the leftmost (i) and rightmost (j) positions of nums[i], the span is calculated 
+		using the formula span = right - left + 1
+	
+	Update maxSpan:
+		The program compares the current span to maxSpan and updates maxSpan if the current span is larger
+	
+	Return Largest Span:
+		After checking all elements, the function returns maxSpan, which holds the largest span found
+	
+*Learning Takeaways*
+	
+	Looping Through Arrays:
+		The code demonstrates how to iterate through an array in both directions (forward for leftmost and 
+		backward for rightmost occurrences)
+	
+	Nested Loops for Searching:
+		The approach uses nested loops to search for identical values in an array, showing how one can perform 
+		a linear search from both ends of the array
+	
+	Span Calculation:
+		Span is calculated using the indices of the first and last appearances of a number. Understanding the logic 
+		behind right - left + 1 helps clarify how spans are computed in arrays
+	
+	Efficiency Considerations:
+		While the code is functional, its time complexity is O(n^2) due to the nested loops. 
+		Efficiency is not a priority in this case, but optimizing such problems is a key lesson in algorithm design.
+	
+	Java Concepts:
+		Arrays: 
+			The code uses basic array manipulation, which is crucial in Java programming
+		Math Class: 
+			The program uses Math.max() to find the maximum span, introducing utility methods in the 
+			java.lang.Math class
