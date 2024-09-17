@@ -1,0 +1,75 @@
+Lab5ArraysMedium_Sum13SolutionNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough:*
+
+	Method Declaration:
+		The method is declared as public and static, meaning it can be accessed without creating 
+		an instance of the class. It accepts an integer array (nums[]) as an argument and returns
+		an integer (int).
+			public static int sum13(int[] nums)
+	
+	Initialization of the Sum Variable:
+		A variable sum is initialized to 0. This will be used to accumulate the sum of the 
+		values in the array.
+			int sum = 0;
+	
+	Looping Through the Array:
+		A for loop iterates through the array. The loop starts from index 0 and continues until it 
+		reaches the end of the array (nums.length).
+			for (int i = 0; i < nums.length; i++)
+	
+	Skipping 13 and the Next Number:
+		If Condition: 
+			Inside the loop, there's an if statement that checks whether the current element is 13.
+			If the current element is 13, the next element in the array is skipped using i++, 
+			which increments the index and avoids processing the number following 13.
+		Else: 
+			If the current element is not 13, it's added to the sum variable.
+			
+			if (nums[i] == 13) {
+			    i++;  // Skip the next number
+			} else {
+			    sum += nums[i];  // Add the current number to the sum
+			}
+			
+	Return the Final Sum:
+		After the loop finishes iterating through the array, the final sum is returned.
+
+
+*Learning Takeaways*
+
+	Array Iteration:
+	The method demonstrates how to loop through an array using a standard for loop. 
+	This is essential for working with collections of data in Java.
+	
+	Conditionals:
+	The method uses an if-else structure to handle specific conditions. In this case, the number 
+	13 and the number immediately following it are skipped. Conditional statements allow us to 
+	introduce logic and decision-making into our programs.
+	
+	Index Manipulation:
+	The expression i++ inside the if block shows how you can manipulate the loop index to skip 
+	elements in an array. This is a key technique when you need to selectively process elements 
+	in a collection.
+	
+	Edge Case Handling:
+		This method implicitly handles certain edge cases:
+			Empty array: 
+				If the input array is empty (nums.length == 0), the loop will not run, 
+				and the method will return 0.
+			13 at the end: 
+				If 13 appears as the last element, the next element won't exist, 
+				and the program won't try to access out-of-bounds elements.
+			Consecutive 13s: 
+				If multiple 13s appear consecutively, the program skips each one and its 
+				immediate next number correctly.
+				
+	Returning Values from Methods:
+	The sum13 method demonstrates how to return values from methods, which is a fundamental 
+	concept in Java. The final sum is returned to the caller after processing the entire array.
+	
+	Runtime Efficiency:
+	This method processes the array in O(n) time complexity, where n is the number of elements 
+	in the array. The method only goes through the array once, which is an efficient way to solve 
+	the problem.
+
