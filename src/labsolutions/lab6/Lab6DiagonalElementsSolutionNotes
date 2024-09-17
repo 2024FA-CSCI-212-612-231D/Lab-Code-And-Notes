@@ -1,0 +1,47 @@
+Lab6DiagonalElementsSolutionNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Code Walkthrough*
+
+	Method Definition (getDiagonalElements(int[][] array)):
+		Parameters: 
+			This method takes a 2D square array of integers (int[][] array) as a parameter.
+		
+		Size Calculation: 
+			The size of the array is obtained using array.length, which returns the number of rows. 
+			Since the array is square, the number of rows equals the number of columns.
+		
+		1D Array Creation: 
+			A 1D array called diagonal is initialized with a length equal to the size of the square 
+			2D array. This will store the diagonal elements.
+		
+		Looping through the Diagonal:
+			A single for loop iterates from i = 0 to size - 1. In each iteration, the code accesses 
+			the diagonal element array[i][i] (where the row index and column index are the same) 
+			and stores it in the corresponding position of the 1D array diagonal[i].
+		
+		Return Statement: 
+			Once all the diagonal elements are extracted, the method returns the diagonal array.
+
+*Learning Takeways*
+
+	Traversing the Main Diagonal:
+		The main diagonal of a square array consists of the elements where the row index is equal 
+		to the column index (i.e., array[i][i]).
+		
+		You only need one loop, not nested loops, to access these elements. This simplifies the 
+		traversal because you're moving along the diagonal, not through every element in the 2D array.
+		
+	Efficient Looping:
+		The method uses a single for loop, which runs in O(n) time, where n is the size of the array. 
+		This is more efficient than a double-loop structure, which would be O(n^2) for traversing all 
+		elements in the 2D array. Here, we only need to visit the diagonal elements, so a single loop 
+		is sufficient.
+		
+	Immutability of Array Sizes:
+		Once the array size is defined, you cannot change it in Java. For example, when we create the 
+		1D array diagonal, its size is determined by the size of the square array (array.length), 
+		and that size is fixed for the rest of the program.
+		
+		
+		

@@ -1,0 +1,44 @@
+Lab6RotateMatrixSolutionNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Code Walkthrough*
+
+	Method Definition (rotate90Clockwise(int[][] array)):
+		Input Parameter: 
+			The method takes a square 2D array (int[][] array) as an input.
+		
+		Calculate the Array Size: 
+			Since the array is square, the number of rows is equal to the number of columns. 
+			The size of the array is stored in the variable size using array.length, which 
+			returns the number of rows.
+		
+		Create a New Array: 
+			A new 2D array called rotatedArray is initialized with the same dimensions as the 
+			original array (size x size). This array will store the elements after the rotation.
+		
+		Nested Loops for Rotating Elements:
+			The outer loop (for (int i = 0; i < size; i++)) iterates through each row of 
+			the original array.
+			The inner loop (for (int j = 0; j < size; j++)) iterates through each element in the row.
+		
+		Key Rotation Step:
+			For each element at position (i, j) in the original array, 
+			it moves to position (j, size - 1 - i) in the rotated array.
+			
+			This works because in a 90-degree clockwise rotation, the first row becomes the last 
+			column, the second row becomes the second-to-last column, and so on.
+		
+		Return Statement: 
+			After all elements are placed in their new positions, the method returns the 
+			rotated array (rotatedArray).
+			
+*Learning Takeways*
+
+	Array Indexing and Swapping:
+		The core idea here is the transformation of indices when rotating an array:
+			The element at position (i, j) in the original array moves to position 
+			(j, size - 1 - i) in the rotated array.
+			
+			This pattern of indexing is crucial for understanding 90-degree 
+			rotations in 2D matrices.
+
