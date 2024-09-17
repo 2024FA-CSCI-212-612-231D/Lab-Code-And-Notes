@@ -1,0 +1,54 @@
+Lab6LongestStringIn2DArraySolutionNotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Code Walkthrough*
+
+	1. Class Definition (LongestStringIn2DArray):
+		The class LongestStringIn2DArray contains both the main method for testing and the 
+		method findLongestStringLength that implements the required functionality.
+		
+	2. Method Definition (findLongestStringLength(String[][] array)):
+		Parameters: 
+			This method takes a 2D array of Strings (String[][] array) as its parameter.
+		Variable Initialization: 
+			A variable maxLength is initialized to store the length of the longest string found in 
+			the array, starting at 0.
+		Outer Loop (Rows): 
+			The first for loop (for (int i = 0; i < array.length; i++)) iterates over the rows of 
+			the 2D array.
+		Inner Loop (Columns): 
+			The second for loop (for (int j = 0; j < array[i].length; j++)) iterates over the columns 
+			within each row.
+		Check for Non-null Strings: 
+			The code checks if the current string (array[i][j]) is not null to avoid a 
+			NullPointerException. This ensures that only valid strings are processed.
+		Update maxLength: 
+			If the length of the current string (array[i][j].length()) is greater than maxLength, 
+			it updates the maxLength variable.
+		Return Statement: 
+			After all elements in the 2D array are processed, the method returns the value of 
+			maxLength, which now holds the length of the longest string found.
+	
+	3. Main Method:
+		Array Initialization: 
+			A 2D array of strings (testArray) is created with multiple rows and columns. 
+			Each element is a string.
+		Method Call: 
+			The findLongestStringLength method is called with the test array as an argument.
+		Print the Result: 
+			The length of the longest string returned by the method is printed to the console.
+	
+
+*Learning Takeaways*
+	2D Arrays in Java:
+		A 2D array is essentially an array of arrays. To access an element, 
+		you need two indices: one for the row and one for the column.
+		
+		The outer loop iterates over rows (array.length gives the number of rows), and the 
+		inner loop iterates over columns within each row (array[i].length gives the number of 
+		elements in the i-th row).
+	
+	Working with null Values:
+		In Java, you must check for null values before performing operations like calling methods 
+		on an object. In this example, before calling .length(), we check if the string is not null 
+		to avoid runtime exceptions.
+	
