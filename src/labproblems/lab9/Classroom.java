@@ -10,12 +10,12 @@ public class Classroom {
 	 *     and a door that is either open or closed. 
 	 *     
 	 * Create all appropriate 
-	 *     private instance variables, 
 	 * 	   add a constructor, 
 	 *     accessor methods, 
 	 *     a method that returns the square footage of the room, 
-	 *     methods to flip the light switch and open 
-	 *     or shut the door and a toString method. 
+	 *     methods to flip the light switch and 
+	 *     open or shut the door 
+	 *     and a toString method. 
 	 * 
 	 * Test it using a main method.
 	 * 
