@@ -2,7 +2,7 @@ package labproblems.lab9;
 
 public class Classroom {
 	/* Write a class that represents a classroom. 
-	 * A classroom has 
+	 * A classroom has the following private fields:
 	 *     a room number, 
 	 *     length, 
 	 *     width, 
@@ -20,12 +20,9 @@ public class Classroom {
 	 * Test it using a main method.
 	 * 
 	 * */
-	
-	
-	
+
 	public static void main (String[] args) {
 		// test your classroom class here
-		
 	}
-
 }
+
