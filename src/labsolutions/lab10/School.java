@@ -3,13 +3,15 @@ package labsolutions.lab10;
 import labsolutions.lab9.Classroom;
 
 public class School {
-	
+	// field 
 	private Classroom[] rooms;
 	
+	//constructor
 	public School(Classroom[] rooms) {
 		this.rooms = rooms;
 	}
 	
+	// behavioral methods:
 	public Classroom getLargestRoom() {
 		Classroom largest = rooms[0];
 		for(int i = 1; i < rooms.length; i++) {
@@ -36,4 +38,6 @@ public class School {
 		}
 	}
 
+	
+	// main method to instantiate the School class 
 }
