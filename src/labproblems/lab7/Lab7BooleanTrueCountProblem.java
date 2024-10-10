@@ -29,3 +29,4 @@ public class Lab7BooleanTrueCountProblem {
         System.out.println("Number of true elements: " + trueCount);
     }
 }
+

@@ -31,5 +31,4 @@ public class School {
 	
 	// NOTE you do not need to write a main method
 	// for this School class to test your methods
-
 }

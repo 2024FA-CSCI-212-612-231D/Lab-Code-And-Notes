@@ -12,17 +12,18 @@ public class Lab5ArraysMedium_Sum13Problem {
 		 * 		sum13([1, 2, 2, 1]) → 6 
 		 * 		sum13([1, 1]) → 2 
 		 * 		sum13([1, 2, 2, 1, 13]) → 6
+		 * 		sum13([1, 2, 2, 1, 13, 4]) → 6
+		 * 		sum13([1, 2, 2, 1, 13, 4, 1]) → 7
 		 * 
 		 * */
-		
 		// TODO Lab Solution:
-
 	}
-
 	// sample usage of sum13
 	public static void main(String[] args) {
 		System.out.println(sum13(new int[]{1, 2, 2, 1})); // 6
 		System.out.println(sum13(new int[]{1, 1})); // 2 
 		System.out.println(sum13(new int[]{1, 2, 2, 1, 13})); // 6
+		System.out.println(sum13(new int[]{1, 2, 2, 1, 13, 4})); // 6
+		System.out.println(sum13(new int[]{1, 2, 2, 1, 13, 4, 1})); // 7
 	}
 }
