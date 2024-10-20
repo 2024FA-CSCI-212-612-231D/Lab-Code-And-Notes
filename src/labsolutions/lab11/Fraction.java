@@ -73,12 +73,16 @@ public class Fraction {
 		if(!positive) {
 			num1 *= -1;
 		}
+		
 		int num2 = otherFraction.num * den;
 		if(!otherFraction.positive) {
 			num2 *= -1;
 		}
+		
 		int numerator = num1 + num2;
+		
 		int denominator = den * otherFraction.den;
+		
 		if(numerator >= 0) {
 			return new Fraction(true, numerator, denominator);
 		}
