@@ -5,6 +5,8 @@ package labproblems.lab11;
 public class Tester {
 
 	public static void main(String[] args) {
+		Fraction a = new Fraction(false, 1, 2);
+		a.isGreaterThan(b);
 		// TODO Declare a new fraction object named "a" with positive = false, num = 1, den = 2
 		// TODO Declare a second fraction object named "b" with positive = false, num = 1, den = 3
 

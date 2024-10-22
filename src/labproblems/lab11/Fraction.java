@@ -8,6 +8,30 @@ public class Fraction {
 	private int num;
 	private int den;
 	
+	public boolean isPositive() {
+		return positive;
+	}
+
+	public void setPositive(boolean positive) {
+		this.positive = positive;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public int getDen() {
+		return den;
+	}
+
+	public void setDen(int den) {
+		this.den = den;
+	}
+
 	//Precondition: numerator and denominator are positive
 	public Fraction(boolean isPositive, int numerator, int denominator) {
 		positive = isPositive;
@@ -36,6 +60,7 @@ public class Fraction {
 		return small;
 	}
 	
+	@Override 
 	public String toString() {
 		String out = "";
 		if(!positive) {

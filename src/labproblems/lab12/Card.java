@@ -33,3 +33,14 @@ public class Card {
 	// array have the same suit.
 	
 }
+
+
+
+
+
+
+
+
+
+
+
