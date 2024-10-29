@@ -11,5 +11,4 @@ public class DoubleDog extends Dog {
      * hint: reference LoudDog
      */
 
-	
 }

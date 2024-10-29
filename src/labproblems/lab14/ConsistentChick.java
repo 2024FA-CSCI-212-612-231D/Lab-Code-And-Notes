@@ -2,6 +2,8 @@ package labproblems.lab14;
 
 public class ConsistentChick extends Chick{
 	
+	public String sound;
+	
 	/* TODO Write ConsistentChick, a subclass of Chick. 
 	 * A ConsistentChick decides at birth whether to chirp 
 	 * or cheep and stands by that decision forever. 
