@@ -15,7 +15,7 @@ public class Range implements NumberGroup {
 		return number >= low && number <= high;
 	}
 	
-	@Override
+	@Override // equals is actually inherited from Java’s Object class, which is the superclass of all Java classes
 	public boolean equals(Object other) {
 		if(!(other instanceof Range)) {
 			return false;
