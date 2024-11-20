@@ -63,7 +63,7 @@ public class Project {
 		private final ComponentType type;
 		private final int manufactureNum;
 		
-		private Component(ComponentType type, int num) {
+		public Component(ComponentType type, int num) {
 			this.type = type;
 			manufactureNum = num;
 		}
