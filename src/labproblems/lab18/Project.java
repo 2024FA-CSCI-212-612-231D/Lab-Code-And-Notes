@@ -3,24 +3,36 @@ package labproblems.lab18;
 import java.util.ArrayList;
 import java.util.List;
 
+import labsolutions.lab18.Project.Component;
+import labsolutions.lab18.Project.ComponentType;
+
 public class Project {
-	/*TODO 
-	 * In addition to the two nested classes below, 
-	 * 
-	 * Project has the fields 
-	 * 		projectName,
-	 * 		components (a List); 
-	 * 
-	 * A constructor to set the project name
-	 * 
-	 * The methods:
-	 * addComponent(ComponentType type) 
-	 * getNumComponents()
-	 * getComponent(int num) 
-	 * getTotalPrice()
-	 */
+	private String projectName;
+	private List<Component> components = new ArrayList<Component>();
 	
+	public Project(String name) {
+		projectName = name;
+	}
 	
+	public void addComponent(ComponentType type) {
+		components.add(new Component(type, type.manufacture()));
+	}
+	
+	public int getNumComponents() {
+		return components.size();
+	}
+	
+	public Component getComponent(int num) {
+		return components.get(num);
+	}
+	
+	public double getTotalPrice() {
+		double price = 0;
+		for(Component component : components) {
+			price += component.type.price;
+		}
+		return price;
+	}
 	public static class ComponentType{
 		
 		/* TODO 
