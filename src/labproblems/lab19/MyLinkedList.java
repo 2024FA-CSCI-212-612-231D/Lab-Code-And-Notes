@@ -34,7 +34,7 @@ public class MyLinkedList<E> implements Iterable<E>{
 	}
 
 	private ListNode head = new ListNode(null, null); //dummy node
-	private int size;
+	private int size = 0;
 
 	public int size() {
 		return size;
